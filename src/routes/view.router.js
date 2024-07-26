@@ -24,8 +24,7 @@ router.get('/',(req,res) => {
 })
 
 router.get('/home', (req, res) => {
-    const products = readProducts()
-    console.log(products)
+    const products = readProducts()    
     res.render('home', { products })
 })
 

@@ -37,11 +37,16 @@ app.use("/", productsRouter)
 app.use("/", cartsRouter)
 app.use('/',viewRouter)
  
-const httpServer = app.listen(8080, () => console.log(`Server runinng on PORT: ${PORT}`))
+const httpServer = app.listen(PORT, () => console.log(`Server runinng on PORT: ${PORT}`))
+
 const socketServer = new Server(httpServer)
 
 socketServer.on('connection', socket => {
     console.log("Nuevo cliente conectado")
+
+    socket.on('message',data => {
+        console.log(`soy la data ${data}`)
+    })
 
  // Enviar la lista inicial de productos al cliente
  socket.emit('productUpdate', readProducts())

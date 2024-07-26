@@ -1,6 +1,8 @@
 
 const socket = io()
-//socket.emit('message',"Soy el mensaje enviado.")
+socket.emit('message',"Soy el mensaje enviado.")
+
+
 
 socket.on('productUpdate', (products) => {
     const productList = document.getElementById('product-list');
