@@ -187,5 +187,14 @@
     "price": "precio 06",
     "status": true,
     "stock": "stock6"
+  },
+  {
+    "pid": 22,
+    "title": "Producto 11",
+    "description": "Producto 9",
+    "code": "code 06",
+    "price": "precio 06",
+    "status": true,
+    "stock": "stock6"
   }
 ]

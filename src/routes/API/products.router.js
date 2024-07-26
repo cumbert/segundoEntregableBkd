@@ -50,8 +50,6 @@ router.post('/products', (req, res) => {
 
     res.json({ message: 'Producto agregado'})
 
-     // Después de agregar, actualizar o eliminar un producto
-     socketServer.emit('productUpdate', readProducts())
 
     })    
     
@@ -77,8 +75,7 @@ router.put('/products/:pid', (req, res) => {
 
     res.json({ message: 'Producto actualizado'})
 
-    // Después de agregar, actualizar o eliminar un producto
-    socketServer.emit('productUpdate', readProducts())
+
 
 })
     
@@ -95,9 +92,7 @@ router.delete('/products/:pid', (req, res) => {
 
     res.json({ message: 'Producto eliminado' })
 
-    
-    // Después de agregar, actualizar o eliminar un producto
-    socketServer.emit('productUpdate', readProducts());
+
 
 })
 

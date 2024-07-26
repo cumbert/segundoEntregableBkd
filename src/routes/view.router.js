@@ -2,6 +2,7 @@ import express from 'express'
 import fs from 'fs'
 import { fileURLToPath } from 'url'
 import path from 'path'
+import { socketServer } from "../App.js"
 
 const router = express.Router()
 
@@ -31,6 +32,9 @@ router.get('/home', (req, res) => {
 router.get('/realtimeproducts', (req, res) => {
     const products = readProducts(); // Obtener los productos actuales
     res.render('realTimeProducts', { products })
+
+    // Después de agregar, actualizar o eliminar un producto
+    socketServer.emit('productUpdate', readProducts())
 })
 
 
