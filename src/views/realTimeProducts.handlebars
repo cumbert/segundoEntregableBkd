@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <h2>Ingresar un producto</h2>
-
-    <div>
-    <form action="" method="post">
-     <input type="text">
-     <input type="text">
-     <input type="text">
-     <input type="text">
-     <input type="text">
-     <input type="text">
-     <button type="submit">Enviar</button>   
+    <title>Formulario de Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="product-form">
+        <div class="form-group">
+            <label for="nombre">Nombre Producto</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion">
+        </div>
+        <div class="form-group">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo">
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio">
+        </div>
+        <div class="form-group">
+            <label for="status">Status</label>
+            <input type="text" id="status" name="status">
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" name="stock">
+        </div>
+        <div class="form-group">
+            <label for="categoria">Categoría</label>
+            <input type="text" id="categoria" name="categoria">
+        </div>
+        <button type="submit">Enviar</button>
     </form>
-
-</div>
+</body>
+</html>
 
     <h2>Eliminar un producto</h2>
 
