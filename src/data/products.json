@@ -202,5 +202,29 @@
     "title": "Test_01",
     "status": true,
     "stock": "200"
+  },
+  {
+    "pid": 24,
+    "title": "Test__02",
+    "status": true,
+    "stock": "200"
+  },
+  {
+    "pid": 25,
+    "title": "Fideos",
+    "description": "fideos monitos semola",
+    "code": "af2701",
+    "price": "850",
+    "status": true,
+    "stock": "100"
+  },
+  {
+    "pid": 26,
+    "title": "Fideos",
+    "description": "fideos monitos semola",
+    "code": "af2701",
+    "price": "850",
+    "status": true,
+    "stock": "100"
   }
 ]
