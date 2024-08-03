@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Producto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../public/styles.css">
 </head>
 <body>
-    <form class="product-form">
+    <form action="/products" method="post">
         <div class="form-group">
-            <label for="nombre">Nombre Producto</label>
-            <input type="text" id="nombre" name="nombre">
+            <label for="title">Nombre Producto</label>
+            <input type="text" id="title" name="title">
         </div>
         <div class="form-group">
             <label for="descripcion">Descripción</label>
@@ -41,6 +41,9 @@
 </body>
 </html>
 
+
+--<!esta conectividad revisarla en la parte del chat >--
+
     <h2>Eliminar un producto</h2>
 
 <div>
@@ -65,5 +68,5 @@
 </body>
 
 <script src="/socket.io/socket.io.js"></script>
-<script src="/index.js"></script>
+<script src="../public/js/index.js"></script>
 </html>

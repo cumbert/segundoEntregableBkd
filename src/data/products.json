@@ -196,5 +196,11 @@
     "price": "precio 06",
     "status": true,
     "stock": "stock6"
+  },
+  {
+    "pid": 23,
+    "title": "Test_01",
+    "status": true,
+    "stock": "200"
   }
 ]

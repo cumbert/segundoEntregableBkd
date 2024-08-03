@@ -75,8 +75,6 @@ router.put('/products/:pid', (req, res) => {
 
     res.json({ message: 'Producto actualizado'})
 
-
-
 })
     
 router.delete('/products/:pid', (req, res) => {
@@ -91,8 +89,6 @@ router.delete('/products/:pid', (req, res) => {
     writeProducts(filteredProducts)
 
     res.json({ message: 'Producto eliminado' })
-
-
 
 })
 
